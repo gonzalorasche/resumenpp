@@ -208,11 +208,16 @@ function setValor(id, valor){
 ===================================================== */
 function actualizarReciboSimulado(){
 
-    let bna = RECIBO_BASE.bnaTotal;
-    let galicia = RECIBO_BASE.galicia;
+    /* ===== BASE ===== */
+    let ppBNA = RECIBO_BASE.bnaTotal;
+    let ppGalicia = RECIBO_BASE.galicia;
     let anses = RECIBO_BASE.ansesTotal;
     let brico1 = RECIBO_BASE.brico1;
     let brico2 = RECIBO_BASE.brico2;
+
+    /* ===== REFINANCIACIONES (VIENEN DE OTRO SCRIPT) ===== */
+    const refiBNA = window.refiBNA || 0;
+    const refiGalicia = window.refiGalicia || 0;
 
     /* ===== CANCELACIONES ===== */
     document.querySelectorAll(".check-prestamo:checked").forEach(check => {
@@ -221,30 +226,33 @@ function actualizarReciboSimulado(){
             .querySelector(".nombre-deuda")
             .textContent.trim();
 
+        /* PP BNA */
         if (nombre.includes("BNA") && CUOTAS[nombre]) {
-            bna -= CUOTAS[nombre];
+            ppBNA -= CUOTAS[nombre];
         }
 
-        if (nombre === "PP GALICIA") galicia = 0;
+        /* PP GALICIA */
+        if (nombre === "PP GALICIA") {
+            ppGalicia = 0;
+        }
 
+        /* ANSES */
         if (nombre === "PP BRICO ANSES") anses -= CUOTAS[nombre];
         if (nombre === "PP GON ANSES") anses -= CUOTAS[nombre];
 
+        /* BRICO */
         if (nombre === "PP BRICO 1") brico1 = 0;
         if (nombre === "PP BRICO 2") brico2 = 0;
     });
 
-    bna = Math.max(0, bna);
-    galicia = Math.max(0, galicia);
+    /* ===== CLAMP ===== */
+    ppBNA = Math.max(0, ppBNA);
+    ppGalicia = Math.max(0, ppGalicia);
     anses = Math.max(0, anses);
 
-    /* ===== REFINANCIACIONES (DESDE OTRO SCRIPT) ===== */
-    const refiBNA = window.refiBNA || 0;
-    const refiGalicia = window.refiGalicia || 0;
-
-    /* ===== UI ===== */
-    setValor("recibo-bna", -(bna + refiBNA));
-    setValor("recibo-galicia", -(galicia + refiGalicia));
+    /* ===== UI (CADA COSA EN SU LUGAR) ===== */
+    setValor("recibo-bna", -ppBNA);
+    setValor("recibo-galicia", -ppGalicia);
     setValor("recibo-anses", -anses);
     setValor("recibo-brico1", -brico1);
     setValor("recibo-brico2", -brico2);
@@ -252,11 +260,11 @@ function actualizarReciboSimulado(){
     setValor("recibo-refi-bna", -refiBNA);
     setValor("recibo-refi-galicia", -refiGalicia);
 
-    /* ===== EGRESOS (ACÁ ESTABA EL ERROR) ===== */
+    /* ===== EGRESOS ===== */
     const egresos =
         RECIBO_BASE.descuentosFijos +
-        bna +
-        galicia +
+        ppBNA +
+        ppGalicia +
         anses +
         brico1 +
         brico2 +
@@ -277,6 +285,7 @@ document
     .forEach(c => c.addEventListener("change", actualizarReciboSimulado));
 
 actualizarReciboSimulado();
+
 
 
 
