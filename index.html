@@ -2,385 +2,691 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Simulación Préstamo USD 28.000</title>
+    <title>Detalle de Deudas y Planes de Cancelación</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- =========================
-     TÍTULO PRINCIPAL
-========================= -->
 <header>
-    <h1>SIMULACIÓN PRÉSTAMO USD 28.000.- EN 25 CUOTAS</h1>
+    <h1>DETALLE DE DEUDAS Y PLANES DE CANCELACIÓN</h1>
+    <p>Resumen consolidado de préstamos y tarjetas de crédito</p>
 </header>
 
-<!-- =========================
-     RESUMEN DE DEUDAS
-========================= -->
-<section id="resumen-deudas">
-    <h2>RESUMEN DE DEUDAS</h2>
-    <p>
-        A continuación se detallan todos los compromisos crediticios actuales,
-        incluyendo préstamos personales, tarjetas de crédito y obligaciones vigentes.
-    </p>
+<section>
+    <h2>Resumen de Deudas</h2>
 
-    <!-- CONTENEDOR TABLA + RESUMEN -->
-    <div id="contenedor-deudas">
-        
-        <!-- TABLA DE DEUDAS -->
-        <section id="bloque-deudas">
-            <h3>Detalle de Deudas</h3>
+    <div class="deudas-grid">
 
-<table>
-        <thead>
-            <tr>
-                <th>Concepto</th>
-                <th>PP - Total</th>
-                <th>PP - Cuota</th>
-                <th>TC - Pago Mínimo</th>
-                <th>TC - Resto de Saldo</th>
-            </tr>
-        </thead>
-
-        <tbody>
-
-        <tr>
-            <td>
-                PP BRICO 1
-            </td>
-            <td data-valor="2205578.14">
-                <input type="checkbox" class="chk-celda">
-                $ 2.205.578,14
-            </td>
-            <td data-valor="110424.61">
-                <input type="checkbox" class="chk-celda">
-                $ 110.424,61
-            </td>
-            <td data-valor="0">
-                <input type="checkbox" class="chk-celda"> -
-            </td>
-            <td data-valor="0">
-                <input type="checkbox" class="chk-celda"> -
-            </td>
-        </tr>
-
-        <tr>
-            <td> PP BRICO 2</td>
-            <td data-valor="1818118.47"><input type="checkbox" class="chk-celda"> $ 1.818.118,47</td>
-            <td data-valor="100364.28"><input type="checkbox" class="chk-celda"> $ 100.364,28</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>PP BRICO ANSES</td>
-            <td data-valor="841694.55"><input type="checkbox" class="chk-celda"> $ 841.694,55</td>
-            <td data-valor="48500"><input type="checkbox" class="chk-celda"> $ 48.500,00</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>PP GON ANSES</td>
-            <td data-valor="841694.55"><input type="checkbox" class="chk-celda"> $ 841.694,55</td>
-            <td data-valor="48500"><input type="checkbox" class="chk-celda"> $ 48.500,00</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>PP 0014456613 BNA</td>
-            <td data-valor="47192.77"><input type="checkbox" class="chk-celda"> $ 47.192,77</td>
-            <td data-valor="4960.47"><input type="checkbox" class="chk-celda"> $ 4.960,47</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>PP 0018854563 BNA</td>
-            <td data-valor="141069.37"><input type="checkbox" class="chk-celda"> $ 141.069,37</td>
-            <td data-valor="7109.77"><input type="checkbox" class="chk-celda"> $ 7.109,77</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>PP 0031273430 BNA</td>
-            <td data-valor="6824955.93"><input type="checkbox" class="chk-celda"> $ 6.824.955,93</td>
-            <td data-valor="297575.14"><input type="checkbox" class="chk-celda"> $ 297.575,14</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>PP 0034000838 BNA</td>
-            <td data-valor="4669102.49"><input type="checkbox" class="chk-celda"> $ 4.669.102,49</td>
-            <td data-valor="224410.75"><input type="checkbox" class="chk-celda"> $ 224.410,75</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>PP GALICIA</td>
-            <td data-valor="6228872.07"><input type="checkbox" class="chk-celda"> $ 6.228.872,07</td>
-            <td data-valor="640000"><input type="checkbox" class="chk-celda"> $ 640.000,00</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-        </tr>
-
-        <tr>
-            <td>TC VISA BNA</td>
-            <td data-valor="15232768.41"><input type="checkbox" class="chk-celda"> $ 15.232.768,41</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="2300000"><input type="checkbox" class="chk-celda"> $ 2.300.000,00</td>
-            <td data-valor="12932768.41"><input type="checkbox" class="chk-celda"> $ 12.932.768,41</td>
-        </tr>
-
-        <tr>
-            <td>TC NATIVA MC BNA</td>
-            <td data-valor="16013357.50"><input type="checkbox" class="chk-celda"> $ 16.013.357,50</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="2300000"><input type="checkbox" class="chk-celda"> $ 2.300.000,00</td>
-            <td data-valor="13713357.50"><input type="checkbox" class="chk-celda"> $ 13.713.357,50</td>
-        </tr>
-
-        <tr>
-            <td>TC MASTER GAL</td>
-            <td data-valor="22705172.48"><input type="checkbox" class="chk-celda"> $ 22.705.172,48</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="6505170"><input type="checkbox" class="chk-celda"> $ 6.505.170,00</td>
-            <td data-valor="16200002.48"><input type="checkbox" class="chk-celda"> $ 16.200.002,48</td>
-        </tr>
-
-        <tr>
-            <td>TC AMEX GAL</td>
-            <td data-valor="22578063.67"><input type="checkbox" class="chk-celda"> $ 22.578.063,67</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="4582450"><input type="checkbox" class="chk-celda"> $ 4.582.450,00</td>
-            <td data-valor="17995613.67"><input type="checkbox" class="chk-celda"> $ 17.995.613,67</td>
-        </tr>
-
-        <tr>
-            <td>TC BBANK</td>
-            <td data-valor="12836000"><input type="checkbox" class="chk-celda"> $ 12.836.000,00</td>
-            <td data-valor="0"><input type="checkbox" class="chk-celda"> -</td>
-            <td data-valor="4029413.67"><input type="checkbox" class="chk-celda"> $ 4.029.413,67</td>
-            <td data-valor="8806586.33"><input type="checkbox" class="chk-celda"> $ 8.806.586,33</td>
-        </tr>
-
-        </tbody>
-    </table>
-
-        </section>
-
-        <!-- RESUMEN DE PAGOS (JS) -->
-        <section id="resumen-pagos">
-            <h3>DEUDAS QUE SE CANCELARÁN CON LOS $ 41.020.000,00 (USD 28.000.-)</h3>
+        <!-- =========================
+             PRÉSTAMOS
+        ========================= -->
+        <div class="bloque-deuda" id="prestamos">
+            <h3>Resumen de Deudas – Préstamos</h3>
 
             <table>
                 <thead>
                     <tr>
-                        <th>Qué</th>
-                        <th>Cuánto</th>
+                        <th>Operación</th>
+                        <th>Saldo Capital</th>
+                        <th>Valor Cuota</th>
+                        <th>Cuotas Impagas</th>
                     </tr>
                 </thead>
-                <tbody id="resumen-body"></tbody>
-                <tfoot>
+                <tbody>
                     <tr>
-                        <th>Total</th>
-                        <th id="total-pagar">$ 0,00</th>
+                        <td>PP BRICO 1</td>
+                        <td data-valor="2205578.14">$ 2.205.578,14</td>
+                        <td data-valor="110424.61">$ 110.424,61</td>
+                        <td>0</td>
                     </tr>
-                </tfoot>
+                    <tr>
+                        <td>PP BRICO 2</td>
+                        <td data-valor="1818118.47">$ 1.818.118,47</td>
+                        <td data-valor="100364.28">$ 100.364,28</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PP BRICO ANSES</td>
+                        <td data-valor="841694.55">$ 841.694,55</td>
+                        <td data-valor="48500">$ 48.500</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PP GON ANSES</td>
+                        <td data-valor="841694.55">$ 841.694,55</td>
+                        <td data-valor="48500">$ 48.500</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PP 0014456613 BNA</td>
+                        <td data-valor="47192.77">$ 47.192,77</td>
+                        <td data-valor="4960.47">$ 4.960,47</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PP 0018854563 BNA</td>
+                        <td data-valor="141069.37">$ 141.069,37</td>
+                        <td data-valor="7109.77">$ 7.109,77</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PP 0031273430 BNA</td>
+                        <td data-valor="6824955.93">$ 6.824.955,93</td>
+                        <td data-valor="297575.14">$ 297.575,14</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PP 0034000838 BNA</td>
+                        <td data-valor="4669102.49">$ 4.669.102,49</td>
+                        <td data-valor="224410.75">$ 224.410,75</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PP GALICIA</td>
+                        <td data-valor="6228872.07">$ 6.228.872,07</td>
+                        <td data-valor="680000">$ 680.000</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
             </table>
-        </section>
+
+            <div class="total-box">
+                <span>TOTAL CAPITAL</span>
+                <strong data-total="prestamos-capital">
+                    $ 23.618.278,34
+                </strong>
+            </div>
+        </div>
+
+        <!-- =========================
+             TARJETAS DE CRÉDITO
+        ========================= -->
+        <div class="bloque-deuda" id="tarjetas">
+            <h3>Resumen de Deudas – Tarjetas de Crédito</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarjeta</th>
+                        <th>Saldo Resumen Actual</th>
+                        <th>Pago Mínimo</th>
+                        <th>Capital en Cuotas</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TC VISA BNA</td>
+                        <td data-valor="6466384.21">$ 6.466.384,21</td>
+                        <td data-valor="2300000">$ 2.300.000</td>
+                        <td data-valor="6466384.21">$ 6.466.384,21</td>
+                        <td data-valor="15232768.41">$ 15.232.768,41</td>
+                    </tr>
+                    <tr>
+                        <td>TC NATIVA MC BNA</td>
+                        <td data-valor="6856678.75">$ 6.856.678,75</td>
+                        <td data-valor="2300000">$ 2.300.000</td>
+                        <td data-valor="6856678.75">$ 6.856.678,75</td>
+                        <td data-valor="16013357.50">$ 16.013.357,50</td>
+                    </tr>
+                    <tr>
+                        <td>TC MASTER GAL</td>
+                        <td data-valor="16200002.48">$ 16.200.002,48</td>
+                        <td data-valor="6505170">$ 6.505.170</td>
+                        <td data-valor="0">$ 0</td>
+                        <td data-valor="22705172.48">$ 22.705.172,48</td>
+                    </tr>
+                    <tr>
+                        <td>TC AMEX GAL</td>
+                        <td data-valor="17995613.67">$ 17.995.613,67</td>
+                        <td data-valor="4582450">$ 4.582.450</td>
+                        <td data-valor="0">$ 0</td>
+                        <td data-valor="22578063.67">$ 22.578.063,67</td>
+                    </tr>
+                    <tr>
+                        <td>TC BBANK</td>
+                        <td data-valor="8806586.33">$ 8.806.586,33</td>
+                        <td data-valor="4029413.67">$ 4.029.413,67</td>
+                        <td data-valor="0">$ 0</td>
+                        <td data-valor="12836000">$ 12.836.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-box">
+                <span>SALDO TOTAL</span>
+                <strong data-total="tarjetas-total">
+                    $ 89.365.362,06
+                </strong>
+            </div>
+        </div>
 
     </div>
 </section>
 
+<section>
+    <h2>Posibilidades de cancelación u ofrecimientos de cada Entidad</h2>
+
+    <div class="ofrecimientos-grid">
+
 <!-- =========================
-     COMPROMISO ACTUAL
+     BRUBANK
 ========================= -->
-<section id="compromiso-actual">
-    <h2>COMPROMISO ACTUAL POR RECIBO DE SUELDO</h2>
+<div class="ofrecimiento-card">
+    <div class="ofrecimiento-logo">
+        <img src="brubank.png" alt="Brubank">
+    </div>
 
-    <div id="recibos-actuales">
+    <p class="ofrecimiento-texto">
+        <strong>OFRECIMIENTO:</strong><br>
+        15% POR PAGO CANCELATORIO
+    </p>
 
-        <!-- RECIBO GONZALO ACTUAL -->
-        <section id="recibo-gon-actual">
-            <h3>Situación Actual Gonzalo (Sin Pagos TC)</h3>
+    <div class="ofrecimiento-detalle">
+        <p>
+            <span>Deuda actual</span>
+            <strong data-valor="12836000">$ 12.836.000</strong>
+        </p>
+        <p>
+            <span>Quita 15%</span>
+            <strong data-valor="1925400">- $ 1.925.400</strong>
+        </p>
+        <p class="ofrecimiento-total">
+            <span>Total cancelatorio</span>
+            <strong data-valor="10910600">$ 10.910.600</strong>
+        </p>
+    </div>
+</div>
 
-            <article class="recibo">
-                <header>
-                    <h4>Recibo de Sueldo Gon</h4>
-                    <p>Simulación mensual</p>
-                </header>
 
-                <section>
-                    <h5>Ingresos</h5>
-                    <ul>
-                        <li><span>Sueldo</span><span data-valor="3068000">$ 3.068.000,00</span></li>
-                        <li><span>Horas extras</span><span data-valor="240000">$ 240.000,00</span></li>
-                        <li><span>Aumento sueldo</span><span data-valor="200000">$ 200.000,00</span></li>
-                    </ul>
-                </section>
+        <!-- =========================
+             BANCO GALICIA
+        ========================= -->
+        <div class="ofrecimiento-card">
+            <div class="ofrecimiento-logo">
+                <img src="galicia.png" alt="Banco Galicia">
+            </div>
 
-                <section>
-                    <h5>Descuentos / Egresos</h5>
-                    <ul>
-                        <li><span>Desc. recibo</span><span data-valor="-99000">-$ 99.000,00</span></li>
-                        <li><span>PP Banco Nación</span><span data-valor="-521985.89">-$ 521.985,89</span></li>
-                        <li><span>Desc. recibo</span><span data-valor="-11000">-$ 11.000,00</span></li>
-                        <li><span>Desc. recibo</span><span data-valor="-42000">-$ 42.000,00</span></li>
-                        <li><span>Cuotas ANSES</span><span data-valor="-97000">-$ 97.000,00</span></li>
-                        <li><span>Cuota hipoteca</span><span data-valor="-400000">-$ 400.000,00</span></li>
-                        <li><span>Expensas Anne</span><span data-valor="-180000">-$ 180.000,00</span></li>
-                        <li><span>Expensas casa</span><span data-valor="-95000">-$ 95.000,00</span></li>
-                        <li><span>Gastos</span><span data-valor="-450000">-$ 450.000,00</span></li>
-                        <li><span>PP Brico</span><span data-valor="-110424.61">-$ 110.424,61</span></li>
-                        <li><span>PP Brico</span><span data-valor="-100364.28">-$ 100.364,28</span></li>
-                        <li><span>PP Galicia</span><span data-valor="-645000">-$ 645.000,00</span></li>
-                    </ul>
-                </section>
+            <p class="ofrecimiento-texto">
+                <strong>OFRECIMIENTO:</strong><br>
+                REFINANCIACIÓN UVA + 9.5% CFT
+            </p>
+        </div>
 
-                <footer>
-                    <strong>Saldo final:</strong>
-                    <span data-valor="756225.22">$ 756.225,22</span>
-                </footer>
-            </article>
-        </section>
+        <!-- =========================
+             BANCO NACIÓN
+        ========================= -->
+        <div class="ofrecimiento-card">
+            <div class="ofrecimiento-logo">
+                <img src="banco_nacion.png" alt="Banco Nación">
+            </div>
 
-        <!-- RECIBO BRICO ACTUAL -->
-        <section id="recibo-brico-actual">
-            <h3>Situación Actual Brico</h3>
+            <p class="ofrecimiento-texto">
+                <strong>OFRECIMIENTO:</strong><br>
+                REFINANCIACIÓN A TASA VARIABLE CARTERA GENERAL + 2 PTS (34% TNA)
+            </p>
+        </div>
 
-            <article class="recibo">
-                <header>
-                    <h4>Recibo de Sueldo Brico</h4>
-                    <p>Simulación mensual</p>
-                </header>
+    </div>
+</section>
 
-                <section>
-                    <h5>Ingresos</h5>
-                    <ul>
-                        <li><span>Sueldo</span><span data-valor="5223700">$ 5.223.700,00</span></li>
-                    </ul>
-                </section>
+        <!-- =========================
+            PRESTAMO FAMILIAR
+        ========================= -->
+<section id="prestamo-familiar">
 
-                <section>
-                    <h5>Descuentos / Egresos</h5>
-                    <ul>
-                        <li><span>Descuentos recibo</span><span data-valor="-995259.16">-$ 995.259,16</span></li>
-                        <li><span>Gastos</span><span data-valor="-1250000">-$ 1.250.000,00</span></li>
-                        <li><span>Cuota hipoteca</span><span data-valor="-400000">-$ 400.000,00</span></li>
-                    </ul>
-                </section>
+    <h2>Posibilidad de préstamo familiar</h2>
 
-                <footer>
-                    <strong>Saldo final:</strong>
-                    <span data-valor="2578440.84">$ 2.578.440,84</span>
-                </footer>
-            </article>
-        </section>
+    <p class="bajada">
+        Esta es la mejor manera de evaluar cuán viable es poder ayudarme
+        y planificar los tiempos de devolución de ese préstamo
+    </p>
+
+    <div class="grid-familiar">
+
+        <!-- =========================
+             COLUMNA 1 – PRÉSTAMOS
+        ========================= -->
+        <div class="bloque-deuda">
+
+            <h3>Préstamos a cancelar</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operación</th>
+                        <th>Saldo Capital</th>
+                        <th>Cancelar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-monto="2205578.14">
+                        <td class="nombre-deuda">PP BRICO 1</td>
+                        <td>$ 2.205.578,14</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="1818118.47">
+                        <td class="nombre-deuda">PP BRICO 2</td>
+                        <td>$ 1.818.118,47</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="841694.55">
+                        <td class="nombre-deuda">PP BRICO ANSES</td>
+                        <td>$ 841.694,55</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="841694.55">
+                        <td class="nombre-deuda">PP GON ANSES</td>
+                        <td>$ 841.694,55</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="47192.77">
+                        <td class="nombre-deuda">PP 0014456613 BNA</td>
+                        <td>$ 47.192,77</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="141069.37">
+                        <td class="nombre-deuda">PP 0018854563 BNA</td>
+                        <td>$ 141.069,37</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="6824955.93">
+                        <td class="nombre-deuda">PP 0031273430 BNA</td>
+                        <td>$ 6.824.955,93</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="4669102.49">
+                        <td class="nombre-deuda">PP 0034000838 BNA</td>
+                        <td>$ 4.669.102,49</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+
+                    <tr data-monto="6228872.07">
+                        <td class="nombre-deuda">PP GALICIA</td>
+                        <td>$ 6.228.872,07</td>
+                        <td><input type="checkbox" class="check-prestamo"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- =========================
+             COLUMNA 2 – TARJETAS
+        ========================= -->
+        <div class="bloque-deuda">
+
+            <h3>Tarjetas de crédito</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarjeta</th>
+                        <th>Total</th>
+                        <th>Pago</th>
+                        <th>Saldo restante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="nombre-deuda">TC VISA BNA</td>
+                        <td class="total-tarjeta" data-total="15232768.41">
+                            $ 15.232.768,41
+                        </td>
+                        <td><input type="text" class="pago-input"></td>
+                        <td class="saldo-restante">$ 15.232.768,41</td>
+                    </tr>
+
+                    <tr>
+                        <td class="nombre-deuda">TC NATIVA MC BNA</td>
+                        <td class="total-tarjeta" data-total="16013357.50">
+                            $ 16.013.357,50
+                        </td>
+                        <td><input type="text" class="pago-input"></td>
+                        <td class="saldo-restante">$ 16.013.357,50</td>
+                    </tr>
+
+                    <tr>
+                        <td class="nombre-deuda">TC MASTER GAL</td>
+                        <td class="total-tarjeta" data-total="22705172.48">
+                            $ 22.705.172,48
+                        </td>
+                        <td><input type="text" class="pago-input"></td>
+                        <td class="saldo-restante">$ 22.705.172,48</td>
+                    </tr>
+
+                    <tr>
+                        <td class="nombre-deuda">TC AMEX GAL</td>
+                        <td class="total-tarjeta" data-total="22578063.67">
+                            $ 22.578.063,67
+                        </td>
+                        <td><input type="text" class="pago-input"></td>
+                        <td class="saldo-restante">$ 22.578.063,67</td>
+                    </tr>
+
+                    <tr data-banco="brubank">
+                        <td class="nombre-deuda">TC BBANK</td>
+                        <td class="total-tarjeta" data-total="12836000">
+                            $ 12.836.000
+                        </td>
+                        <td><input type="text" class="pago-input"></td>
+                        <td class="saldo-restante">$ 12.836.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- =========================
+             COLUMNA 3 – RESUMEN
+        ========================= -->
+        <div class="bloque-resumen">
+
+            <h3>Posible destino Préstamo Familiar</h3>
+
+            <table class="tabla-resumen">
+                <thead>
+                    <tr>
+                        <th>Deuda</th>
+                        <th>Importe</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-cancelaciones">
+                    <tr class="placeholder">
+                        <td colspan="2">
+                            Seleccioná deudas o ingresá pagos
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-box destacado">
+                <span>Total préstamo</span>
+                <strong id="total-prestamo">$ 0</strong>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- =========================
+     TOTAL DE DINERO A PRESTAR
+========================= -->
+<section id="total-prestar">
+
+    <h2>Total de dinero a prestar</h2>
+
+    <div class="bloque-total-prestar">
+
+        <div class="fila-total">
+            <span>Total en pesos</span>
+            <strong id="total-prestar-ars">$ 0</strong>
+        </div>
+
+        <div class="fila-tc">
+            <label for="tipo-cambio">
+                Tipo de cambio USD
+            </label>
+            <input
+                type="number"
+                id="tipo-cambio"
+                placeholder="Ej: 1200"
+                step="0.01"
+            >
+        </div>
+
+        <div class="fila-total usd">
+            <span>Total en dólares</span>
+            <strong id="total-prestar-usd">USD 0</strong>
+        </div>
 
     </div>
 
+</section>
+
+
+<!-- =========================
+     REPROGRAMACIÓN DE SALDOS
+========================= -->
+<section id="reprogramacion-saldos">
+
+    <h2>Reprogramación de saldos no cancelados según ofrecimientos de cada Banco</h2>
+
+    <div class="repro-grid">
+
+        <!-- =========================
+             BANCO NACIÓN
+        ========================= -->
+        <div class="repro-card">
+            <h3>Banco Nación</h3>
+
+            <ul>
+                <li>
+                    <span>Saldos pendientes TC BNA</span>
+                    <strong id="saldo-bna">$ 0</strong>
+                </li>
+
+                <li class="destacado">
+                    <span>Cuota estimada (60 meses)</span>
+                    <strong id="cuota-bna">$ 0</strong>
+                </li>
+            </ul>
+
+            <!-- DESGLOSE CUOTA -->
+            <div class="desglose">
+                <div>
+                    <span>Capital</span>
+                    <strong id="bna-capital">$ 0</strong>
+                </div>
+                <div>
+                    <span>Interés</span>
+                    <strong id="bna-interes">$ 0</strong>
+                </div>
+                <div>
+                    <span>IVA</span>
+                    <strong id="bna-iva">$ 0</strong>
+                </div>
+            </div>
+
+            <p class="nota">
+                TNA 32% + 2 pts · IVA 21% · Sistema Francés · 60 cuotas
+            </p>
+        </div>
+
+        <!-- =========================
+             BANCO GALICIA
+        ========================= -->
+        <div class="repro-card">
+            <h3>Banco Galicia</h3>
+
+            <ul>
+                <li>
+                    <span>Saldos pendientes TC Galicia</span>
+                    <strong id="saldo-galicia">$ 0</strong>
+                </li>
+
+                <li class="destacado">
+                    <span>Cuota estimada (72 meses)</span>
+                    <strong id="cuota-galicia">$ 0</strong>
+                </li>
+            </ul>
+
+            <!-- DESGLOSE CUOTA -->
+            <div class="desglose">
+                <div>
+                    <span>Capital (UVA)</span>
+                    <strong id="gal-capital">$ 0</strong>
+                </div>
+                <div>
+                    <span>Interés (UVA)</span>
+                    <strong id="gal-interes">$ 0</strong>
+                </div>
+                <div>
+                    <span>IVA</span>
+                    <strong id="gal-iva">$ 0</strong>
+                </div>
+            </div>
+
+            <p class="nota">
+                TNA 8.5% · CFT c/IVA 9.25% · Ajuste UVA ($1690) · 72 cuotas
+            </p>
+        </div>
+
+        <!-- =========================
+             BRUBANK
+        ========================= -->
+        <div class="repro-card bloqueado">
+            <h3>Brubank</h3>
+
+            <ul>
+                <li>
+                    <span>Saldo pendiente</span>
+                    <strong id="saldo-brubank">$ 0</strong>
+                </li>
+            </ul>
+
+            <p class="nota error">
+                No admite refinanciación
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SIMULACIÓN RECIBO GONZALO
+========================= -->
+<section id="simulacion-recibo">
+
+    <h2>Simulación variación recibo de haberes Gonzalo</h2>
+
+    <div class="recibos-grid">
+
+        <!-- =========================
+             RECIBO ACTUAL (FIJO)
+        ========================= -->
+        <article class="recibo recibo-actual">
+
+            <header>
+                <h4>ACTUALIDAD (NO CONTEMPLA TARJETAS DE CRÉDITO)</h4>
+            </header>
+
+            <section>
+                <h5>Ingresos</h5>
+                <ul>
+                    <li><span>Sueldo</span><span>$ 3.068.000</span></li>
+                    <li><span>Horas extras</span><span>$ 200.000</span></li>
+                    <li><span>Aumento sueldo</span><span>$ 150.000</span></li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Descuentos / Egresos</h5>
+                <ul>
+                    <li><span>Descuentos recibo</span><span>-$ 152.000</span></li>
+                    <li><span>PP Banco Nación</span><span>-$ 521.985,89</span></li>
+                    <li><span>Cuotas ANSES</span><span>-$ 97.000</span></li>
+                    <li><span>Cuota hipoteca</span><span>-$ 400.000</span></li>
+                    <li><span>Expensas / Prepaga Ana</span><span>-$ 220.000</span></li>
+                    <li><span>Expensas casa</span><span>-$ 95.000</span></li>
+                    <li><span>Gastos</span><span>-$ 450.000</span></li>
+                    <li><span>PP Brico 1</span><span>-$ 110.424,61</span></li>
+                    <li><span>PP Brico 2</span><span>-$ 100.364,28</span></li>
+                    <li><span>PP Galicia</span><span>-$ 680.000</span></li>
+                </ul>
+            </section>
+
+            <footer>
+                <strong>Saldo final</strong>
+                <span>$ 591.225,22</span>
+            </footer>
+
+        </article>
+
+        <!-- =========================
+             RECIBO SIMULADO
+        ========================= -->
+        <article class="recibo recibo-simulado">
+
+            <header>
+                <h4>SIMULACIÓN (NO CONTEMPLA TARJETAS DE CRÉDITO)</h4>
+            </header>
+
+            <section>
+                <h5>Ingresos</h5>
+                <ul>
+                    <li><span>Sueldo</span><span>$ 3.068.000</span></li>
+                    <li><span>Horas extras</span><span>$ 200.000</span></li>
+                    <li><span>Aumento sueldo</span><span>$ 150.000</span></li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Descuentos / Egresos</h5>
+                <ul>
+                    <li><span>Descuentos recibo</span><span>-$ 152.000</span></li>
+                    <li><span>PP Banco Nación</span><span id="recibo-bna"></span></li>
+                    <li><span>Cuotas ANSES</span><span id="recibo-anses"></span></li>
+                    <li><span>Cuota hipoteca</span><span>-$ 400.000</span></li>
+                    <li><span>Expensas / Prepaga Ana</span><span>-$ 220.000</span></li>
+                    <li><span>Expensas casa</span><span>-$ 95.000</span></li>
+                    <li><span>Gastos</span><span>-$ 450.000</span></li>
+                    <li><span>PP Brico 1</span><span id="recibo-brico1"></span></li>
+                    <li><span>PP Brico 2</span><span id="recibo-brico2"></span></li>
+                    <li><span>PP Galicia</span><span id="recibo-galicia"></span></li>
+                    <br>
+                    <br>
+                    <!-- 🔽 AGREGAR ESTOS DOS -->
+                    <li>
+                        <span>Refi TC Banco Nación</span>
+                        <span id="recibo-refi-bna">-$ 0</span>
+                    </li>
+
+                    <li>
+                        <span>Refi UVA Galicia</span>
+                        <span id="recibo-refi-galicia">-$ 0</span>
+                    </li>
+                    <!-- 🔼 FIN -->
+                </ul>
+            </section>
+
+            <footer>
+                <strong>Saldo final</strong>
+                <span id="saldo-simulado"></span>
+            </footer>
+
+        </article>
+
+    </div>
 </section>
 
 <!-- =========================
      CRONOGRAMA DE PAGOS
 ========================= -->
-<section id="cronograma">
-    <h2>CRONOGRAMA DE PAGOS</h2>
+<section id="cronograma-pagos">
 
-    <h3>VARIABLES QUE SE TOMARON EN CUENTA PARA CALCULAR EL CRONOGRAMA</h3>
+    <h2>Cronograma de pagos</h2>
+    <p>Volver a modificar el tipo de cambio para que se haga bien la cuenta y volver</p>
+    <br>
 
-    <section id="variables-modelo">
-    <h2>Variables del Modelo</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Variable</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tipo de cambio base (ARS/USD) MARZO 2026</td>
-                <td>$ 1.535,39</td>
-            </tr>
-            <tr>
-                <td>Aumento tipo de cambio mensual</td>
-                <td>2,2%</td>
-            </tr>
-            <tr>
-                <td>Inflación mensual</td>
-                <td>2,2%</td>
-            </tr>
-            <tr>
-                <td>Aumento salarial mensual</td>
-                <td>2,0%</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p class="nota-variables">
-        Estas variables representan supuestos macroeconómicos utilizados para la simulación,
-        permitiendo evaluar la evolución del préstamo y los pagos en un escenario realista.
-    </p>
-    </section>
-</section>
-
-<!-- =========================
-     USOS DEL SUELDO
-========================= -->
-<section id="uso-sueldo">
-    <h2>USOS DEL SUELDO SOBRE LA DEVOLUCIÓN</h2>
-
-    <article>
-        <h3>Gonzalo</h3>
-        <ul>
-            <li>
-                Refinanciación Tarjetas BNA:
-                $ 26.646.125,91 (60 cuotas aprox: $ 1.100.000)
-            </li>
-            <li>
-                Refinanciación Tarjetas Galicia:
-                $ 34.195.616,15 (72 cuotas aprox: $ 650.000 – modalidad UVA)
-            </li>
-            <li>
-                Aportará aguinaldos, bono aniversario del banco y bono Día del Bancario.
-            </li>
-        </ul>
-        <br>
-        <h3>Brico</h3>
-        <ul>
-            <li>
-                Aportará parte del arreglo de la refinanciación UVA de Galicia.
-            </li>
-            <li>
-                Abonará mensualmente USD 800 destinados a la devolución del préstamo.
-            </li>
-            <li>
-                En meses de aguinaldo aportará USD 1.000.
-            </li>
-        </ul>
-    </article>
-</section>
-
-<!-- =========================
-     TABLA CRONOGRAMA USD
-========================= -->
-<section id="plan-usd">
-    <h2>TABLA CON CRONOGRAMA DE PAGOS</h2>
-
-    <table>
+    <table class="tabla-cronograma">
         <thead>
             <tr>
                 <th>Cuota</th>
                 <th>Mes</th>
                 <th>Año</th>
-                <th>Pago Extra Gon (USD)</th>
+                <th>Pago Gon (USD)</th>
                 <th>Pago Brico (USD)</th>
                 <th>Total Pago (USD)</th>
                 <th>Saldo (USD)</th>
@@ -388,133 +694,22 @@
                 <th>Pago Total (ARS)</th>
             </tr>
         </thead>
-        <tbody id="plan-usd-body"></tbody>
+
+        <tbody id="cronograma-body">
+            <!-- SE INSERTA DESDE JS -->
+        </tbody>
     </table>
-</section>
 
-<!-- =========================
-     RECIBOS POST REFI
-========================= -->
-<section id="recibos-post-refi">
-    <h2>SITUACIÓN POSTERIOR A LAS REFINANCIACIONES</h2>
-
-    <div id="recibos-container">
-
-        <!-- RECIBO GON POST REFI -->
-        <section id="recibo-gon-post">
-            <h3>Situación Gonzalo (Post Refi)</h3>
-
-            <article class="recibo">
-                <header>
-                    <h4>Recibo de Sueldo Gon</h4>
-                    <p>Simulación mensual</p>
-                </header>
-
-                <section>
-                    <h5>Ingresos</h5>
-                    <ul>
-                        <li><span>Sueldo</span><span data-valor="3068000">$ 3.068.000,00</span></li>
-                        <li><span>Horas extras</span><span data-valor="240000">$ 240.000,00</span></li>
-                        <li><span>Aumento sueldo</span><span data-valor="200000">$ 200.000,00</span></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h5>Descuentos / Egresos</h5>
-                    <ul>
-                        <li><span>Desc. recibo</span><span data-valor="-99000">-$ 99.000,00</span></li>
-                        <li><span>PP Banco Nación</span><span data-valor="-236480.99">-$ 236.480,99</span></li>
-                        <li><span>Desc. recibo</span><span data-valor="-11000">-$ 11.000,00</span></li>
-                        <li><span>Desc. recibo</span><span data-valor="-42000">-$ 42.000,00</span></li>
-                        <li><span>Cuotas ANSES</span><span data-valor="-97000">-$ 97.000,00</span></li>
-                        <li><span>Cuota hipoteca</span><span data-valor="-400000">-$ 400.000,00</span></li>
-                        <li><span>Expensas Anne</span><span data-valor="-180000">-$ 180.000,00</span></li>
-                        <li><span>Expensas casa</span><span data-valor="-95000">-$ 95.000,00</span></li>
-                        <li><span>Gastos</span><span data-valor="-450000">-$ 450.000,00</span></li>
-                        <li><span>PP Brico</span><span data-valor="-110424.61">-$ 110.424,61</span></li>
-                        <li><span>PP Brico</span><span data-valor="-100364.28">-$ 100.364,28</span></li>
-                        <li><span>Nueva Refi Galicia</span><span data-valor="-650000">-$ 650.000,00</span></li>
-                        <li><span>Nueva Refi BNA</span><span data-valor="-1100000">-$ 1.100.000,00</span></li>
-                    </ul>
-                </section>
-
-                <footer>
-                    <strong>Saldo final:</strong>
-                    <span data-valor="-62269.88">-$ 62.269,88</span>
-                </footer>
-            </article>
-        </section>
-
-        <!-- RECIBO BRICO POST REFI -->
-        <section id="recibo-brico-post">
-            <h3>Situación Brico (Post Refi)</h3>
-
-            <article class="recibo">
-                <header>
-                    <h4>Recibo de Sueldo Brico</h4>
-                    <p>Simulación mensual</p>
-                </header>
-
-                <section>
-                    <h5>Ingresos</h5>
-                    <ul>
-                        <li><span>Sueldo</span><span data-valor="5223700">$ 5.223.700,00</span></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h5>Descuentos / Egresos</h5>
-                    <ul>
-                        <li><span>Descuentos recibo</span><span data-valor="-995259.16">-$ 995.259,16</span></li>
-                        <li><span>Gastos</span><span data-valor="-1250000">-$ 1.250.000,00</span></li>
-                        <li><span>Cuota hipoteca</span><span data-valor="-400000">-$ 400.000,00</span></li>
-                        <li><span>Ayuda Refi Galicia</span><span data-valor="-200000">-$ 200.000,00</span></li>
-                        <li><span>Devolución USD 28.000</span><span data-valor="-1228312">-$ 1.228.312,00</span></li>
-                    </ul>
-
-                    <p class="nota-usd">Aprox USD 800 mensuales</p>
-                </section>
-
-                <footer>
-                    <strong>Saldo final:</strong>
-                    <span data-valor="1150128.84">$ 1.150.128,84</span>
-                </footer>
-            </article>
-        </section>
-
-    </div>
 </section>
 
 
-<!-- =========================
-     CONCLUSIÓN
-========================= -->
-<footer id="conclusion-wrapper">
-    <div id="conclusion">
-        <p>
-            Este plan es el que mejor se alinea a mostrar un panorama realista de pagos,
-            contemplando las variables macroeconómicas posibles dentro de nuestra economía familiar.
-        </p>
-
-        <p>
-            Se mantiene un margen positivo en el sueldo de Brico para afrontar eventuales imprevistos.
-        </p>
-
-        <p>
-            Es probable la obtención de ingresos adicionales por trabajos freelance de
-            Diseño Gráfico o Desarrollo Web, los cuales permitirían adelantar pagos
-            y finalizar el crédito antes del plazo previsto.
-        </p>
-
-        <p>
-            El crédito está planeado inicialmente para ser cancelado en un plazo
-            aproximado de <strong>25 cuotas</strong> bajo el esquema vigente.
-        </p>
-    </div>
-</footer>
 
 
 
-<script src="./script.js"></script>
+
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
